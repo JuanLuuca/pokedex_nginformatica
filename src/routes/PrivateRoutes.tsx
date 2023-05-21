@@ -4,8 +4,8 @@ function PrivateRoutes() {
 
   return (
     <Routes>
-      <Route path="/" element={""}></Route>
-      <Route path="/register" element={""}></Route>
+      <Route path="/juanrota" element={""}></Route>
+      <Route path="/teste123" element={""}></Route>
     </Routes>
   )
 }
