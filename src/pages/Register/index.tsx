@@ -23,7 +23,7 @@ export function Resgister() {
                 toast.success('Usuário criado com sucesso!');
                 return;
             } else {
-                toast.error('As senhas precisam ser iguais!');
+                toast.error('As senhas na criação precisam ser iguais!');
                 return;
             }
         } catch (error) {
