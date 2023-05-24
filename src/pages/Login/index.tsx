@@ -23,6 +23,7 @@ export function Login() {
             const response = await loginApi.post('/login', userRegister);
             if(response) {
                 localStorage.setItem('token', response.data.response.token);
+                localStorage.setItem('user', response.data.response._id);
                 toast.success('Login efetuado com sucesso!');
                 navigate('/');
                 return;

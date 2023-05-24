@@ -8,3 +8,18 @@ export interface typePokedex {
         front_default: string
     }
 }
+
+export interface typeGetDataPokemon {
+    id: number,
+    name: string,
+    experiencia: number,
+    peso: number
+}
+
+export interface openLogoutType {
+    openLogout: boolean
+}
+
+export interface MockupType {
+    handleClickMockup: () => void
+}
