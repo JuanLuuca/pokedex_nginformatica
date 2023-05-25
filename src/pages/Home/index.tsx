@@ -171,7 +171,7 @@ export const Home = () => {
             <div className="flex justify-end items-end mt-14">
                 <Mockup openLogout={openLogout}/>
             </div>
-            <div className="grid grid-cols-4">
+            <div className="grid grid-cols-4 max-[1500px]:grid-cols-3 max-[1200px]:grid-cols-2">
             {poke.filter((filter) => (
                 filter.name.toLowerCase().includes(search.toLowerCase())
             ))

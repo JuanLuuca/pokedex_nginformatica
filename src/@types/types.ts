@@ -9,6 +9,12 @@ export interface typePokedex {
     }
 }
 
+export interface idCaptureType {
+    idCapture: number
+    idCaptureName: string
+    idCaptureImage: string
+}
+
 export interface typeGetDataPokemon {
     id: number,
     name: string,

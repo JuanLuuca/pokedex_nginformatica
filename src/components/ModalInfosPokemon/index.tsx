@@ -4,14 +4,9 @@ import '../../modal.css';
 import { loginApi } from '../../services/api';
 import { useNavigate } from 'react-router-dom';
 import { toast } from 'react-toastify';
+import { idCaptureType } from '../../@types/types';
 
 Modal.setAppElement("#root");
-
-export interface idCaptureType {
-    idCapture: number
-    idCaptureName: string
-    idCaptureImage: string
-}
 
 export function ModalInfosPokemon({ idCapture, idCaptureName, idCaptureImage }: idCaptureType) {
   const [modalIsOpen, setIsOpen] = React.useState(false);
@@ -33,8 +28,10 @@ export function ModalInfosPokemon({ idCapture, idCaptureName, idCaptureImage }: 
     setIsOpen(false);
   }
 
+  // função para inserir informções de uma captura
   async function handleInsertInfoCapture() {
-    const datateste = {
+
+    const dataCapture = {
       _id: idCapture,
       email: localStorage.getItem('email'),
       habitat: valueHabitat,
@@ -44,9 +41,10 @@ export function ModalInfosPokemon({ idCapture, idCaptureName, idCaptureImage }: 
       ataques: valueAtaque
     }
 
-    const response = await loginApi.put('/teste', datateste);
+    const response = await loginApi.put('/updateinfocapture', dataCapture);
     if(response) {
       toast.success('Valores Inseridos com Sucesso!');
+      window.location.reload();
       navigate('/capturePokemons');
     }
     return console.log('fez a requisição', response);
