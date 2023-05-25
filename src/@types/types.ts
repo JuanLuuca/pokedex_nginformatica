@@ -16,6 +16,15 @@ export interface typeGetDataPokemon {
     peso: number
 }
 
+export interface typeGetFavorite {
+    _id: number
+    id: number,
+    name: string,
+    experiencia: number,
+    peso: number,
+    imagemPokemon: string
+}
+
 export interface openLogoutType {
     openLogout: boolean
 }

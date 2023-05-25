@@ -1,5 +1,5 @@
 import { useState, useEffect, FormEvent } from "react";
-import { Link } from "react-router-dom";
+import { Link, useNavigate } from "react-router-dom";
 import { loginApi } from "../../services/api";
 import { toast } from "react-toastify";
 
@@ -8,6 +8,8 @@ export function Resgister() {
     const [email, setEmail] = useState('');
     const [password, setPassword] = useState('');
     const [confirmPassword, setConfirmPassword] = useState('');
+
+    const navigate = useNavigate();
 
     async function handleCreateLogin(event: FormEvent) {
         event.preventDefault();
@@ -21,6 +23,7 @@ export function Resgister() {
             if(password == confirmPassword) {
                 await loginApi.post('/register', userRegister);
                 toast.success('Usuário criado com sucesso!');
+                navigate('/login')
                 return;
             } else {
                 toast.error('As senhas na criação precisam ser iguais!');
