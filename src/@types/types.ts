@@ -18,11 +18,16 @@ export interface typeGetDataPokemon {
 
 export interface typeGetFavorite {
     _id: number
-    id: number,
-    name: string,
-    experiencia: number,
-    peso: number,
+    id: number
+    name: string
+    experiencia: number
+    peso: number
     imagemPokemon: string
+    habitat: string
+    ataques: string
+    fraquezas: string
+    alimentacao: string
+    local_captura: string
 }
 
 export interface openLogoutType {
