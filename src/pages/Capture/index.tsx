@@ -63,13 +63,13 @@ export const CapturePage = () => {
                                 <img className="w-36 h-36" src={data.imagemPokemon} alt="" />
                             </div>
                             <div className="flex-col">
-                                <p className="text-base text-black"><strong>Nome</strong>: {data.name}</p>
-                                <p className="text-base text-black"><strong>Exp</strong>: {data.experiencia}</p>
-                                <p className="text-base text-black"><strong>Peso</strong>: {data.peso}</p>
-                                <p className="text-base text-black"><strong>Local de Captura</strong>: {data.local_captura == "" ? "Insira um valor" : data.local_captura}</p>
-                                <p className="text-base text-black"><strong>Formas de Alimentação</strong>: {data.alimentacao == "" ? "Insira um valor" : data.alimentacao}</p>
-                                <p className="text-base text-black"><strong>Fraquezas</strong>: {data.fraquezas == "" ? "Insira um valor" : data.fraquezas}</p>
-                                <p className="text-base text-black"><strong>Ataques</strong>: {data.ataques == "" ? "Insira um valor" : data.ataques}</p>
+                                <p className="text-[15px] text-black"><strong>Nome</strong>: {data.name}</p>
+                                <p className="text-[15px] text-black"><strong>Exp</strong>: {data.experiencia}</p>
+                                <p className="text-[15px] text-black"><strong>Peso</strong>: {data.peso}</p>
+                                <p className="text-[15px] text-black"><strong>Local de Captura</strong>: {data.local_captura == "" ? "Insira um valor" : data.local_captura}</p>
+                                <p className="text-[15px] text-black"><strong>Alimentação</strong>: {data.alimentacao == "" ? "Insira um valor" : data.alimentacao}</p>
+                                <p className="text-[15px] text-black"><strong>Fraquezas</strong>: {data.fraquezas == "" ? "Insira um valor" : data.fraquezas}</p>
+                                <p className="text-[15px] text-black"><strong>Ataques</strong>: {data.ataques == "" ? "Insira um valor" : data.ataques}</p>
                             </div>
                         </div>
                         <div className="flex items-center justify-center mt-10 ml-6">    
