@@ -74,7 +74,3 @@ O projeto utiliza as seguintes tecnologias:
 - React Modal: Uma biblioteca para criar modais (pop-ups) no React.
 - Express: Um framework de aplicativo da web para Node.js.
 - Mongoose: Uma biblioteca do Node.js que fornece uma solução baseada em esquemas para modelar os dados do aplicativo e interagir com o MongoDB.
-
-## Licença
-
-Este projeto está licenciado sob a licença [MIT](https://opensource.org/licenses/MIT).
