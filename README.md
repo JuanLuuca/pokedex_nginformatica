@@ -29,7 +29,7 @@ Antes de executar o front-end, certifique-se de clonar e configurar o back-end t
 
 ## Clonando e configurando o back-end
 
-Clone o repositório do back-end em sua máquina local:
+Usando o mongodb atlas Clone o repositório do back-end em sua máquina local:
 
 ```shell
 git clone https://github.com/JuanLuuca/back-endPokedex_nginformatica.git
